@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Analytics Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>Analytics Dashboard</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#analytics"><i class="fas fa-chart-line"></i> Analytics</a></li>
+          <li><a href="#tools"><i class="fas fa-tools"></i> Tools</a></li>
+          <li><a href="#charts"><i class="fas fa-chart-pie"></i> Charts</a></li>
+          <li><a href="#indicators"><i class="fas fa-tachometer-alt"></i> Indicators</a></li>
+          <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Analytics Section -->
+  <section id="analytics" class="section">
+    <h2>Analytics Overview</h2>
+    <p>View real-time analytics, explore data trends, and customize your view with powerful filters and settings.</p>
+    <div class="chart-container">
+      <canvas id="analyticsChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section id="tools" class="section">
+    <h2>Tools and Resources</h2>
+    <p>Access tools to process data, generate reports, and integrate with external services.</p>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <h3>Data Processor</h3>
+        <button class="tool-btn">Open Tool</button>
+      </div>
+      <div class="tool-card">
+        <h3>Report Generator</h3>
+        <button class="tool-btn">Open Tool</button>
+      </div>
+      <!-- Add more tools as needed -->
+    </div>
+  </section>
+
+  <!-- Charts Section -->
+  <section id="charts" class="section">
+    <h2>Detailed Charts</h2>
+    <p>Compare multiple data sets with interactive and customizable charts.</p>
+    <div class="chart-container">
+      <canvas id="detailedChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Indicators Section -->
+  <section id="indicators" class="section">
+    <h2>Key Indicators</h2>
+    <div class="indicators-grid">
+      <div class="indicator-card">
+        <h3>Performance</h3>
+        <span class="indicator-value">85%</span>
+      </div>
+      <div class="indicator-card">
+        <h3>Efficiency</h3>
+        <span class="indicator-value">92%</span>
+      </div>
+      <!-- Add more indicators as needed -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About This Dashboard</h2>
+    <p>This modern analytics dashboard is designed to visualize and analyze data efficiently. It features advanced tools, interactive charts, and real-time updates.</p>
+    <div class="team-info">
+      <h3>Team Members:</h3>
+      <ul>
+        <li><strong>Roshan Kumar Prajapati</strong> - Developer</li>
+        <li>John Doe - Data Analyst</li>
+        <li>Jane Smith - UX Designer</li>
+      </ul>
+    </div>
+    
+  </section>
+  
+
+  <!-- Scripts -->
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>

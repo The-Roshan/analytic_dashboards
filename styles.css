@@ -1,0 +1,230 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff5151;
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    color: #333; /* Text color */
+   /* background-image: url('background.jpg'); Add your background image URL here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    opacity: 0.9; /* Set background image transparency */
+  }
+  
+  @keyframes colorChange {
+    0% { background-color: #ff7e5f; } /* Start color */
+    25% { background-color: #feb47b; } /* Transition color */
+    50% { background-color: #ff7e5f; } /* Middle color */
+    75% { background-color: #feb47b; } /* Transition color */
+    100% { background-color: #ff7e5f; } /* End color */
+}
+  
+  /* Header and Navigation */
+  header {
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+  }
+  
+  nav {
+    flex: 1;
+    margin-left: 50px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a i {
+    margin-right: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6b6b;
+  }
+  
+  .nav-links a:hover i {
+    transform: rotate(360deg);
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 60px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .section h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .tool-card {
+    background-color: #ecf1ee;
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .tool-card h3 {
+    margin-bottom: 15px;
+  }
+  
+  .tool-btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .tool-btn:hover {
+    background-color: #ee1b1b;
+  }
+  
+  .indicators-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .indicator-card {
+    background-color: #d4f1cb;
+    padding: 20px;
+    flex: 1 1 calc(50% - 40px);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .indicator-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .indicator-value {
+    font-size: 36px;
+    color: #ff6b6b;
+  }
+  
+  /* About Section */
+  .team-info ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+  
+  .team-info ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .team-info ul li strong {
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .tools-grid, .indicators-grid {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+    }
+  
+    .nav-links li {
+      margin: 0;
+      text-align: center;
+    }
+  
+    .nav-links li a {
+      padding: 15px;
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+      color: white;
+    }
+  
+    nav {
+      margin-left: 0;
+    }
+  }
+
+  
